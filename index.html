@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXOMEC — Mecatrónica, IoT y Web accesible</title>
+  <meta name="description" content="NEXOMEC: soluciones accesibles en Mecatrónica, IoT y Desarrollo Web. Portafolio, servicios y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="NEXOMEC - Ir al inicio">
+        <span class="brand-logo">N</span>
+        <span class="brand-text">NEXOMEC</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="menu" role="navigation" aria-label="principal">
+        <a href="#sobre" class="menu-link">Sobre nosotros</a>
+        <a href="#servicios" class="menu-link">Servicios</a>
+        <a href="#portafolio" class="menu-link">Portafolio</a>
+        <a href="#proyectos" class="menu-link">Proyectos disponibles</a>
+        <a href="#contacto" class="menu-link btn btn-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with Slider -->
+  <main id="inicio" class="hero">
+    <div class="slider" aria-label="Carrusel de imágenes">
+      <div class="slides">
+        <div class="slide is-active" style="--bg:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1920&auto=format&fit=crop');">
+          <div class="slide-content">
+            <h1 class="title">Mecatrónica + IoT + Web</h1>
+            <p class="subtitle">Soluciones inteligentes y accesibles para tu negocio.</p>
+            <a href="#contacto" class="btn btn-ghost">Cotiza tu proyecto</a>
+          </div>
+        </div>
+        <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1920&auto=format&fit=crop');">
+          <div class="slide-content">
+            <h2 class="title">Automatiza y gana eficiencia</h2>
+            <p class="subtitle">Desde prototipos hasta implementación en planta.</p>
+            <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+          </div>
+        </div>
+        <div class="slide" style="--bg:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1920&auto=format&fit=crop');">
+          <div class="slide-content">
+            <h2 class="title">Sitios web modernos</h2>
+            <p class="subtitle">Rápidos, responsivos y listos para vender.</p>
+            <a href="#portafolio" class="btn btn-ghost">Ver portafolio</a>
+          </div>
+        </div>
+      </div>
+      <button class="ctrl prev" aria-label="Slide anterior">&#10094;</button>
+      <button class="ctrl next" aria-label="Siguiente slide">&#10095;</button>
+      <div class="dots" role="tablist" aria-label="Indicadores del slider"></div>
+    </div>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container grid two fade-up">
+      <div>
+        <h3 class="section-title">NEXOMEC</h3>
+        <p class="lead">Somos un estudio creativo en <strong>Mecatrónica, IoT y Desarrollo Web</strong>. Construimos soluciones reales, ajustadas a tu presupuesto, con foco en resultados.</p>
+        <ul class="checklist">
+          <li>Prototipado rápido y pruebas en campo</li>
+          <li>Integraciones IoT (sensores, actuadores, gateways, nubes)</li>
+          <li>Dashboards y sitios web de alto rendimiento</li>
+        </ul>
+        <a class="btn btn-primary" href="#contacto">Hablemos</a>
+      </div>
+      <div class="card kpi">
+        <div class="kpi-item">
+          <span class="kpi-num">+20</span>
+          <span class="kpi-label">proyectos</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-num">5★</span>
+          <span class="kpi-label">satisfacción</span>
+        </div>
+        <div class="kpi-item">
+          <span class="kpi-num">24/7</span>
+          <span class="kpi-label">soporte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <h3 class="section-title center">Servicios</h3>
+      <div class="grid three">
+        <article class="card service shrink-on-hide">
+          <h4>Automatización</h4>
+          <p>Diseño e implementación de sistemas automáticos para optimizar procesos.</p>
+          <ul class="bullets">
+            <li>PLC/SCADA</li>
+            <li>Robótica</li>
+            <li>Mantenimiento predictivo</li>
+          </ul>
+        </article>
+        <article class="card service shrink-on-hide">
+          <h4>IoT & Telemetría</h4>
+          <p>Monitoreo remoto, sensores, gateways y nubes industriales/low-cost.</p>
+          <ul class="bullets">
+            <li>ESP32/STM</li>
+            <li>MQTT/HTTP</li>
+            <li>Grafana/ThingsBoard</li>
+          </ul>
+        </article>
+        <article class="card service shrink-on-hide">
+          <h4>Desarrollo Web</h4>
+          <p>Webs y dashboards rápidos, SEO y alojamiento económico.</p>
+          <ul class="bullets">
+            <li>Landing/Blog/Tienda</li>
+            <li>APIs y bases de datos</li>
+            <li>Hosting low-cost</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="section">
+    <div class="container">
+      <h3 class="section-title center">Portafolio</h3>
+      <div class="grid three">
+        <figure class="card project reveal">
+          <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=1080&auto=format&fit=crop" alt="Tablero IoT" loading="lazy">
+          <figcaption>
+            <h4>Tablero IoT Industrial</h4>
+            <p>Telemetría en tiempo real con alertas y dashboard.</p>
+          </figcaption>
+        </figure>
+        <figure class="card project reveal">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1080&auto=format&fit=crop" alt="Web de servicios" loading="lazy">
+          <figcaption>
+            <h4>Web de Servicios</h4>
+            <p>Landing rápida (90+ Lighthouse) con SEO.</p>
+          </figcaption>
+        </figure>
+        <figure class="card project reveal">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1080&auto=format&fit=crop" alt="Robot móvil" loading="lazy">
+          <figcaption>
+            <h4>Robot Móvil</h4>
+            <p>Navegación autónoma y control remoto.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="center">
+        <a href="#contacto" class="btn btn-secondary">Quiero algo así</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos Disponibles -->
+  <section id="proyectos" class="section alt">
+    <div class="container">
+      <h3 class="section-title center">Proyectos disponibles</h3>
+      <div class="grid two">
+        <article class="card idea shrink-on-hide">
+          <h4>Kit de monitoreo de agua</h4>
+          <p>Calidad de agua (pH/TDS/Temp) con envío a la nube y dashboard.</p>
+          <span class="price">Desde S/ 850</span>
+        </article>
+        <article class="card idea shrink-on-hide">
+          <h4>Control de riego automático</h4>
+          <p>Sensores de humedad y válvulas, app web para horarios.</p>
+          <span class="price">Desde S/ 990</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container grid two">
+      <div>
+        <h3 class="section-title">Contacto</h3>
+        <p class="lead">¿Listo para empezar? Escríbenos y te respondemos en menos de 24h.</p>
+        <ul class="contact">
+          <li><a href="mailto:hola@nexomec.com">hola@nexomec.com</a></li>
+          <li><a href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp (+51)</a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <form class="card form" name="contacto" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contacto" />
+        <label>Nombre<input type="text" name="nombre" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p class="form-hint">Tu información es privada. No compartimos datos.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> NEXOMEC — Mecatrónica, IoT y Web accesible.</p>
+      <a href="#inicio" class="to-top" aria-label="Volver al inicio">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
