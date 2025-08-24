@@ -182,30 +182,35 @@
       </div>
     </div>
   </section>
-
   <!-- Contacto -->
-  <section id="contacto" class="section">
-    <div class="container grid two">
-      <div>
-        <h3 class="section-title">Contacto</h3>
-        <p class="lead">¿Listo para empezar? Escríbenos y te respondemos en menos de 24h.</p>
-        <ul class="contact">
-          <li><a href="mailto:hola@nexomec.com">hola@nexomec.com</a></li>
-          <li><a href="https://wa.me/51999999999" target="_blank" rel="noopener">WhatsApp (+51)</a></li>
-          <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
-        </ul>
-      </div>
-      <form class="card form" name="contacto" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contacto" />
-        <label>Nombre<input type="text" name="nombre" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-        <p class="form-hint">Tu información es privada. No compartimos datos.</p>
-      </form>
+<section id="contacto" class="section">
+  <div class="container grid two">
+    <div>
+      <h3 class="section-title">Contacto</h3>
+      <p class="lead">¿Listo para empezar? Escríbenos y te respondemos en menos de 24h.</p>
+      <ul class="contact">
+        <li><a href="mailto:vivaelsanti@gmail.com">vivaelsanti@gmail.com</a></li>
+        <li><a href="https://wa.me/51929489695" target="_blank" rel="noopener">WhatsApp (+51) 929489695 </a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
-  </section>
 
+    <!-- Formulario con EmailJS -->
+    <form id="contact-form" class="card form">
+      <label>Nombre</label>
+      <input type="text" name="nombre" required>
+    
+      <label>Email</label>
+      <input type="email" name="email" required>
+    
+      <label>Mensaje</label>
+      <textarea name="mensaje" rows="4" required></textarea>
+    
+      <button class="btn btn-primary" type="submit">Enviar</button>
+      <p class="form-hint">Tu información es privada. No compartimos datos.</p>
+    </form>
+  </div>
+</section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -215,5 +220,8 @@
   </footer>
 
   <script src="script.js"></script>
+<!-- Librería de EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
