@@ -13,7 +13,8 @@ if (toggle && menu){
 }
 
 // Year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if(yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Slider
 (function slider(){
@@ -58,12 +59,14 @@ document.getElementById('year').textContent = new Date().getFullYear();
   // swipe
   let sx = 0;
   const el = document.querySelector('.slider');
-  el.addEventListener('touchstart', e => { sx = e.changedTouches[0].screenX; stop(); }, {passive:true});
-  el.addEventListener('touchend', e => {
-    const dx = e.changedTouches[0].screenX - sx;
-    if (dx > 40) prevSlide(); else if (dx < -40) nextSlide();
-    play();
-  }, {passive:true});
+  if(el){
+    el.addEventListener('touchstart', e => { sx = e.changedTouches[0].screenX; stop(); }, {passive:true});
+    el.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].screenX - sx;
+      if (dx > 40) prevSlide(); else if (dx < -40) nextSlide();
+      play();
+    }, {passive:true});
+  }
 })();
 
 // Scroll reveal & shrink/expand
@@ -105,3 +108,25 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
     }
   });
 });
+
+// =======================
+// EmailJS (Contact Form)
+// =======================
+(function() {
+  emailjs.init("KOU5GgbXAcelEqFaP"); 
+})();
+
+const contactForm = document.getElementById("contact-form");
+if(contactForm){
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_q66aytu", "template_ow6np1k", this)
+        .then(() => {
+            alert("✅ Mensaje enviado con éxito. ¡Te responderemos pronto!");
+            contactForm.reset();
+        }, (err) => {
+            alert("❌ Error al enviar: " + JSON.stringify(err));
+        });
+  });
+}
